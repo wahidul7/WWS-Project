@@ -1,0 +1,50 @@
+.about-wws-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-wws-card, .testimonial-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+  }
+  
+  .about-wws-card h2, .testimonial-card h3 {
+    color: #333;
+  }
+  
+  .about-wws-card p, .about-wws-card ul, .testimonial-card blockquote {
+    color: #555;
+  }
+  
+  .about-wws-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .testimonial-card blockquote {
+    border-left: 4px solid #007BFF;
+    padding-left: 16px;
+    margin: 20px 0;
+    font-style: italic;
+  }
+  
+  .testimonial-card blockquote footer {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .testimonial-card a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .testimonial-card a:hover {
+    text-decoration: underline;
+  }
+  
