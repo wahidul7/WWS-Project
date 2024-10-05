@@ -1,50 +1,63 @@
 .about-wws-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.about-wws-card, .testimonial-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  margin-bottom: 20px; /* Add margin for spacing when wrapping */
+}
+
+.about-wws-card h2, .testimonial-card h3 {
+  color: #333;
+}
+
+.about-wws-card p, .about-wws-card ul, .testimonial-card blockquote {
+  color: #555;
+}
+
+.about-wws-card ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.testimonial-card blockquote {
+  border-left: 4px solid #007BFF;
+  padding-left: 16px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+.testimonial-card blockquote footer {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.testimonial-card a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.testimonial-card a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   .about-wws-card, .testimonial-card {
-    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 48%;
+    width: 100%; /* Full width on smaller screens */
   }
-  
-  .about-wws-card h2, .testimonial-card h3 {
-    color: #333;
+
+  .about-wws-container {
+    padding: 50px 10px; /* Adjust padding for smaller screens */
+    margin-top: 10px; /* Adjust margin for smaller screens */
   }
-  
-  .about-wws-card p, .about-wws-card ul, .testimonial-card blockquote {
-    color: #555;
-  }
-  
-  .about-wws-card ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .testimonial-card blockquote {
-    border-left: 4px solid #007BFF;
-    padding-left: 16px;
-    margin: 20px 0;
-    font-style: italic;
-  }
-  
-  .testimonial-card blockquote footer {
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  .testimonial-card a {
-    color: #007BFF;
-    text-decoration: none;
-  }
-  
-  .testimonial-card a:hover {
-    text-decoration: underline;
-  }
-  
+}

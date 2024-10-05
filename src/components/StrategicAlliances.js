@@ -95,7 +95,7 @@ function StrategicAlliances() {
         </div>
         <div class="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+            src="https://www.worldwirelesssolutions.com/wp-content/uploads/2023/06/vmw.svg"
             height="100"
             width="250"
             alt=""
@@ -103,7 +103,7 @@ function StrategicAlliances() {
         </div>
         <div class="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+            src="https://www.worldwirelesssolutions.com/wp-content/uploads/2023/06/seneca.svg"
             height="100"
             width="250"
             alt=""
@@ -111,11 +111,27 @@ function StrategicAlliances() {
         </div>
         <div class="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+            src="https://www.worldwirelesssolutions.com/wp-content/uploads/2023/06/seneca.svg"
             height="100"
             width="250"
             alt=""
           />
+          <div class="slide">
+            <img
+              src="https://www.worldwirelesssolutions.com/wp-content/uploads/2023/06/seneca.svg"
+              height="100"
+              width="250"
+              alt=""
+            />
+            <div class="slide">
+              <img
+                src="https://www.worldwirelesssolutions.com/wp-content/uploads/2023/06/seneca.svg"
+                height="100"
+                width="250"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

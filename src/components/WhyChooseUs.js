@@ -1,51 +1,56 @@
-import React, { useState } from "react";
-import "./StrategicAlliances.css";
+import React from "react";
+import "./WhyChooseUs.css";
 
-const logos = [
-  "public/WWS/logo1.png",
-  "public/WWS/logo2.png",
-  "public/WWS/logo3.png",
-  "public/WWS/logo4.png",
-  "public/WWS/logo5.png",
-  "public/WWS/logo6.png",
-  // Add more logos as needed
-];
-
-function StrategicAlliances() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 3) % logos.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 3 + logos.length) % logos.length
-    );
-  };
-
-  const displayedLogos = logos.slice(currentIndex, currentIndex + 3);
-
+function WhyChooseUs() {
   return (
-    <div className="slider-container">
-      <button className="nav-button" onClick={prevSlide}>
-        ◀
-      </button>
-      <div className="logos">
-        {displayedLogos.map((logo, index) => (
-          <img
-            key={index}
-            src={logo}
-            alt={`Logo ${index + 1}`}
-            className="logo"
-          />
-        ))}
+    <div className="why-choose-us-card">
+      <h2>Why Choose Us</h2>
+      <p>
+        <strong>Providing New IT Business Solutions And Ideas</strong>
+      </p>
+      <p>
+        WWS has a network of consultants, industry experts, technical gurus, and
+        support staff that spans the globe, offering clients a truly global
+        perspective on a broad range of industries, markets, and technologies.
+      </p>
+      <button className="view-projects-button">View Projects</button>
+
+      <div className="skills">
+        <div className="skill">
+          <h4>Cloud and Consulting Implementation</h4>
+          <div className="progress-bar">
+            <div className="progress" style={{ width: "80%" }}>
+              80%
+            </div>
+          </div>
+        </div>
+        <div className="skill">
+          <h4>Data Security</h4>
+          <div className="progress-bar">
+            <div className="progress" style={{ width: "85%" }}>
+              85%
+            </div>
+          </div>
+        </div>
+        <div className="skill">
+          <h4>Cyber Security Product and Services</h4>
+          <div className="progress-bar">
+            <div className="progress" style={{ width: "80%" }}>
+              80%
+            </div>
+          </div>
+        </div>
+        <div className="skill">
+          <h4>IT Consultancy and Products</h4>
+          <div className="progress-bar">
+            <div className="progress" style={{ width: "95%" }}>
+              95%
+            </div>
+          </div>
+        </div>
       </div>
-      <button className="nav-button" onClick={nextSlide}>
-        ▶
-      </button>
     </div>
   );
 }
 
-export default StrategicAlliances;
+export default WhyChooseUs;
