@@ -7,12 +7,13 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  width: 100vw; /* Full viewport width */
 }
 
 .main-container {
-  padding: 30px;
+  padding: 10px;
+  width: 100%;
 }
 
 /* HEADING */
@@ -45,25 +46,25 @@ body {
 
 .cards {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 0 10px;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%; /* Full width of the parent container */
 }
 
 .card {
-  margin: 20px;
-  padding: 20px;
-  width: calc(25% - 40px);
-  min-height: 200px;
+  width: 100%; /* Full width */
+  margin: 20px 0;
+  padding: 10px;
+  height: 35vh; /* Adjust height as needed */
   display: grid;
-  grid-template-rows: 20px 50px 1fr 50px;
+  grid-template-rows: 10px 50px 1fr 50px;
   border-radius: 10px;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s;
 }
 
 .card:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Change entire card color on hover */
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
   transform: scale(1.01);
 }
@@ -72,12 +73,13 @@ body {
 .card__icon {
   position: relative;
   text-decoration: none;
+  padding: 10px;
   color: rgba(255, 255, 255, 0.9);
 }
 
 .card__link::after {
   position: absolute;
-  top: 25px;
+  top: 30px;
   left: 0;
   content: "";
   width: 0%;
@@ -90,11 +92,6 @@ body {
   width: 100%;
 }
 
-.card__exit {
-  grid-row: 1/2;
-  justify-self: end;
-}
-
 .card__icon {
   grid-row: 2/3;
   font-size: 30px;
@@ -103,6 +100,7 @@ body {
 .card__title {
   grid-row: 3/4;
   font-weight: 400;
+  padding: 10px 10px;
   color: #ffffff;
 }
 
@@ -131,24 +129,4 @@ body {
 
 .card-5 {
   background: radial-gradient(#f588d8, #c0a3e5);
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 1200px) {
-  .card {
-    width: calc(33.33% - 40px); /* 3 cards per row */
-  }
-}
-
-@media (max-width: 900px) {
-  .card {
-    width: calc(50% - 40px); /* 2 cards per row */
-  }
-}
-
-@media (max-width: 600px) {
-  .card {
-    width: calc(100% - 40px); /* 1 card per row */
-  }
 }

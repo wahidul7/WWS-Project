@@ -1,11 +1,30 @@
 .cards {
   padding: 4rem;
   background: #fff;
+  
 }
 
-h1 {
+.cards h1, h3 {
+  color: black;
+  margin: 0 auto;
   text-align: center;
+  position: relative; /* Add this line */
 }
+
+.cards h1::after {
+  content: '';
+  display: block;
+  width: 80%; /* Adjust the width as needed */
+  height: 4px; /* Adjust the height as needed */
+  background: rgb(41, 16, 198); /* Adjust the color as needed */
+  margin: auto; /* Adjust the margin as needed */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px; /* Adjust the position as needed */
+}
+
+
 
 .cards__container {
   display: flex;
@@ -47,7 +66,7 @@ h1 {
 .cards__item__pic-wrap {
   position: relative;
   width: 100%;
-  padding-top: 67%;
+  padding-top: 80%;
   overflow: hidden;
 }
 

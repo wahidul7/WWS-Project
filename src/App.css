@@ -11,10 +11,11 @@
 .ourcompany,
 .contact {
   display: flex;
-  height: 90vh;
+  height: 70vh;
   align-items: center;
   justify-content: center;
   font-size: 3rem;
+  text-align: center;
 }
 
 .itsolutions {
@@ -51,7 +52,4 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
-.ourcompany h2, h3  {
-  text-align: center;
 }
