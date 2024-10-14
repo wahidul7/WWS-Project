@@ -6,130 +6,60 @@ function StrategicAlliances() {
     <div class="slider">
       <div class="slide-track">
         <div class="slide">
+          <img src="WWS\Partners\aviat.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="WWS\Partners\azure.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
+          <img src="WWS\Partners\bell.png" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+            src="WWS\Partners\centinial.png"
             height="100"
             width="250"
             alt=""
           />
         </div>
         <div class="slide">
+          <img src="WWS\Partners\dark.jpeg" height="100" width="250" alt="" />
+        </div>
+        <div class="slide">
           <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+            src="WWS\Partners\download.png"
             height="100"
             width="250"
             alt=""
           />
         </div>
         <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-            height="100"
-            width="250"
-            alt=""
-          />
+          <img src="WWS\Partners\freedom.png" height="100" width="250" alt="" />
         </div>
         <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-            height="100"
-            width="250"
-            alt=""
-          />
+          <img src="WWS\Partners\gbc.png" height="100" width="250" alt="" />
         </div>
         <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
-            height="100"
-            width="250"
-            alt=""
-          />
+          <img src="WWS\Partners\ibm.png" height="100" width="250" alt="" />
         </div>
         <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
-            height="100"
-            width="250"
-            alt=""
-          />
+          <img src="WWS\Partners\pax8.png" height="100" width="250" alt="" />
         </div>
         <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
-            height="100"
-            width="250"
-            alt=""
-          />
+          <img src="WWS\Partners\tng.png" height="100" width="250" alt="" />
         </div>
         <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
-            height="100"
-            width="250"
-            alt=""
-          />
+          <img src="WWS\Partners\yash.svg" height="100" width="250" alt="" />
         </div>
         <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
-            height="100"
-            width="250"
-            alt=""
-          />
+          <img src="WWS\Partners\zoom.svg" height="100" width="250" alt="" />
         </div>
         <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://www.worldwirelesssolutions.com/wp-content/uploads/2023/06/vmw.svg"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://www.worldwirelesssolutions.com/wp-content/uploads/2023/06/seneca.svg"
-            height="100"
-            width="250"
-            alt=""
-          />
-        </div>
-        <div class="slide">
-          <img
-            src="https://www.worldwirelesssolutions.com/wp-content/uploads/2023/06/seneca.svg"
-            height="100"
-            width="250"
-            alt=""
-          />
+          <img src="WWS\Partners\222.jpeg" height="100" width="250" alt="" />
           <div class="slide">
-            <img
-              src="https://www.worldwirelesssolutions.com/wp-content/uploads/2023/06/seneca.svg"
-              height="100"
-              width="250"
-              alt=""
-            />
+            <img src="WWS\Partners\arc.jpeg" height="100" width="250" alt="" />
             <div class="slide">
-              <img
-                src="https://www.worldwirelesssolutions.com/wp-content/uploads/2023/06/seneca.svg"
-                height="100"
-                width="250"
-                alt=""
-              />
+              <img src="WWS/Partners/avg.png" height="100" width="250" alt="" />
             </div>
           </div>
         </div>

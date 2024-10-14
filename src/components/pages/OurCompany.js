@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "../Footer";
 import "../../App.css";
 import ClientFeedback from "../ClientFeedback";
 
@@ -12,7 +11,6 @@ export default function OurCompany() {
       <h3> Trusted globally by companies of all sizes</h3>
 
       <ClientFeedback />
-      <Footer />
     </>
   );
 }

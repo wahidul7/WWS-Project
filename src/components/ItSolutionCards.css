@@ -1,22 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  width: 100vw; /* Full viewport width */
 }
 
 .main-container {
   padding: 10px;
   width: 100%;
 }
-
-/* HEADING */
 
 .heading {
   text-align: center;
@@ -47,24 +38,22 @@ body {
 .cards {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 100%; /* Full width of the parent container */
+  width: 100%;
 }
 
 .card {
-  width: 100%; /* Full width */
+  width: auto;
   margin: 20px 0;
   padding: 10px;
-  height: 35vh; /* Adjust height as needed */
+  height: 35vh;
   display: grid;
-  grid-template-rows: 10px 50px 1fr 50px;
+  grid-template-rows: 10px 50px 1fr 30px;
   border-radius: 10px;
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
   transition: all 0.2s;
 }
 
 .card:hover {
-  background-color: rgba(0, 0, 0, 0.1); /* Change entire card color on hover */
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
   transform: scale(1.01);
 }
@@ -79,7 +68,7 @@ body {
 
 .card__link::after {
   position: absolute;
-  top: 30px;
+  top: 35px;
   left: 0;
   content: "";
   width: 0%;
@@ -108,8 +97,6 @@ body {
   grid-row: 4/5;
   align-self: center;
 }
-
-/* CARD BACKGROUNDS */
 
 .card-1 {
   background: radial-gradient(#1fe4f5, #3fbafe);
