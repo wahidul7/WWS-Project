@@ -21,16 +21,15 @@ export function NewsandBlog() {
   return (
     <>
       <h1 className="newsandblog">News and Blog</h1>
-      <div className="news-container">
+      <div class="article-container">
         {news.map((news) => (
-          <div
-            className="newscard"
-            key={news.id}
-            onClick={() => (window.location.href = news.link)}
-          >
-            {news.image && <img src={news.image} alt="" />}
-            <h2>{news.title}</h2>
-          </div>
+          <a href={news.link} className="article-card" key={news.id}>
+            <div class="content">
+              <p>{news.title}</p>
+              <p>{news.catagary}</p>
+            </div>
+            {news.image && <img src={news.image} alt={news.title} />}
+          </a>
         ))}
       </div>
     </>
