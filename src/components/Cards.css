@@ -1,10 +1,10 @@
 .cards {
   padding: 4rem;
   background: #fff;
-  
 }
 
-.cards h1, h3 {
+.cards h1,
+h3 {
   color: black;
   margin: 0 auto;
   text-align: center;
@@ -12,19 +12,17 @@
 }
 
 .cards h1::after {
-  content: '';
+  content: "";
   display: block;
   width: 80%; /* Adjust the width as needed */
   height: 4px; /* Adjust the height as needed */
-  background: rgb(41, 16, 198); /* Adjust the color as needed */
+  background: rgb(14, 216, 20); /* Adjust the color as needed */
   margin: auto; /* Adjust the margin as needed */
   position: absolute;
   left: 0;
   right: 0;
   bottom: -2px; /* Adjust the position as needed */
 }
-
-
 
 .cards__container {
   display: flex;
@@ -55,9 +53,9 @@
   display: flex;
   flex-flow: column;
   width: 100%;
-  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  box-shadow: 0 6px 20px rgba(10, 243, 91, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(4, 214, 197, 0.84));
+  filter: drop-shadow(0 6px 20px rgba(10, 193, 217, 0.495));
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
@@ -113,7 +111,7 @@
 }
 
 .cards__item__text {
-  color: #252e48;
+  color: #066111;
   font-size: 18px;
   line-height: 24px;
 }

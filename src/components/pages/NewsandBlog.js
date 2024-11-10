@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import News from "../News.css";
 import "../../App.css";
+import "../News.css";
 
 export function NewsandBlog() {
   const [news, setNews] = useState([]);

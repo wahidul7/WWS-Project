@@ -9,14 +9,15 @@
     "ajv": "^7.2.4",
     "ajv-keywords": "^5.1.0",
     "avj": "^0.0.0",
+    "axios": "^0.21.1",
     "axois": "^0.0.1-security",
+    "nodemailer": "^6.9.16",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0",
     "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4",
-    "axios": "^0.21.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",

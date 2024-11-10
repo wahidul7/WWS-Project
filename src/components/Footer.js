@@ -13,6 +13,12 @@ import {
 } from "react-icons/fa";
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="footer-container">
       <div className="footer-links">
@@ -32,7 +38,7 @@ function Footer() {
             </h4>
             <h4>
               <FaEnvelope />
-              &nbsp; info@worldwirelesssolutions.com
+              &nbsp; info@worldwireless solutions.com
             </h4>
             <h4>
               <FaPhone />
@@ -42,11 +48,21 @@ function Footer() {
 
           <div className="footer-link-items">
             <h2>Useful Links</h2>
-            <Link to="/">Privacy Policy</Link>
-            <Link to="/">Terms and Conditions</Link>
-            <Link to="/">Disclaimer</Link>
-            <Link to="/">Accessibility Statement</Link>
-            <Link to="/">FAQ</Link>
+            <Link to="/privacy-lock" onClick={scrollToTop}>
+              Privacy Policy
+            </Link>
+            <Link to="/terms-and-condition" onClick={scrollToTop}>
+              Terms and Conditions
+            </Link>
+            <Link to="/disclaimer" onClick={scrollToTop}>
+              Disclaimer
+            </Link>
+            <Link to="/accessibility-statement" onClick={scrollToTop}>
+              Accessibility Statement
+            </Link>
+            <Link to="/faq" onClick={scrollToTop}>
+              FAQ
+            </Link>
           </div>
 
           <div className="footer-link-items">

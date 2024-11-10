@@ -20,6 +20,7 @@
 }
 
 .itsolutions {
+  margin-top: 2500px;
   background-image: url("/public/images/wp1828918-programmer-wallpapers.jpg");
   background-position: center;
   background-size: cover;
@@ -29,6 +30,7 @@
 }
 
 .casestudies {
+  margin-top: 3000px;
   background-image: url("/public/images/wp4932325-coding-minimalist-wallpapers.jpg");
   background-position: center;
   background-size: cover;
@@ -38,6 +40,7 @@
 }
 
 .ourcompany {
+  margin-top: 3900px;
   background-image: url("/public/images/companybg.jpg");
   background-position: center;
   background-size: cover;
@@ -47,6 +50,7 @@
 }
 
 .contact {
+  margin-top: 800px;
   background-image: url("/public/images/contactbg.jpg");
   background-position: center;
   background-size: cover;
@@ -56,6 +60,7 @@
 }
 
 .newsandblog {
+  margin-top: 3200px;
   background-image: url("/public/images/black-wallpaper-5.jpg");
   background-position: center;
   background-size: cover;

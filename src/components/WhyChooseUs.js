@@ -1,23 +1,22 @@
 import React from "react";
 import "./WhyChooseUs.css";
 
-function WhyChooseUs() {
+const WhyChooseUs = () => {
   return (
-    <div className="why-choose-us-card">
-      <h2>Why Choose Us</h2>
-      <p>
-        <strong>Providing New IT Business Solutions And Ideas</strong>
-      </p>
-      <p>
-        WWS has a network of consultants, industry experts, technical gurus, and
-        support staff that spans the globe, offering clients a truly global
-        perspective on a broad range of industries, markets, and technologies.
-      </p>
-      <button className="view-projects-button">View Projects</button>
-
-      <div className="skills">
+    <div className="why-choose-us-container">
+      <div className="card">
+        <h2>Providing New IT Business Solutions And Ideas</h2>
+        <p>
+          WWS has a network of consultants, industry experts, technical gurus
+          and support staff that spans the globe, and offers clients a truly
+          global perspective on a broad range of industries, markets, and
+          technologies.
+        </p>
+        <button className="view-projects-button">VIEW PROJECTS</button>
+      </div>
+      <div className="skills-container">
         <div className="skill">
-          <h4>Cloud and Consulting Implementation</h4>
+          <h3>Cloud and Consulting Implementation</h3>
           <div className="progress-bar">
             <div className="progress" style={{ width: "80%" }}>
               80%
@@ -25,7 +24,7 @@ function WhyChooseUs() {
           </div>
         </div>
         <div className="skill">
-          <h4>Data Security</h4>
+          <h3>Data Security</h3>
           <div className="progress-bar">
             <div className="progress" style={{ width: "85%" }}>
               85%
@@ -33,7 +32,7 @@ function WhyChooseUs() {
           </div>
         </div>
         <div className="skill">
-          <h4>Cyber Security Product and Services</h4>
+          <h3>Cyber Security Product and Services</h3>
           <div className="progress-bar">
             <div className="progress" style={{ width: "80%" }}>
               80%
@@ -41,7 +40,7 @@ function WhyChooseUs() {
           </div>
         </div>
         <div className="skill">
-          <h4>IT Consultancy and Products</h4>
+          <h3>IT Consultancy and Products</h3>
           <div className="progress-bar">
             <div className="progress" style={{ width: "95%" }}>
               95%
@@ -51,6 +50,6 @@ function WhyChooseUs() {
       </div>
     </div>
   );
-}
+};
 
 export default WhyChooseUs;

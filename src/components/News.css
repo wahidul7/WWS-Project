@@ -70,7 +70,6 @@ body {
   color: #fff;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .article-container {
     padding: 5px;
