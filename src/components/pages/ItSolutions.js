@@ -9,7 +9,6 @@ export default function ItSolutions() {
     <>
       <h3 className="itsolutions">Our services</h3>
       <ItSolutionCards />
-      <br></br>
       <OurProcess />
     </>
   );

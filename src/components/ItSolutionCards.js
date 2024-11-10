@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ItSolutionCards.css";
 
 function ItSolutionCards() {
@@ -23,9 +24,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Cloud Consulting and Implementation</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/page1" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
         <div className="card card-2">
@@ -34,9 +36,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Cyber Security Products & Services</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/page2" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
         <div className="card card-3">
@@ -77,6 +80,83 @@ function ItSolutionCards() {
             <i className="fas fa-bolt"></i>
           </div>
           <h2 className="card__title">Virtual CIO/CTO Service</h2>
+          <p className="card__apply">
+            <a className="card__link" href="#">
+              Learn More <i className="fas fa-arrow-right"></i>
+            </a>
+          </p>
+        </div>
+        <div className="card card-2">
+          <div className="card__icon">
+            <i className="fas fa-bolt"></i>
+          </div>
+          <h2 className="card__title">IP Mobile & Virtual Telephony</h2>
+          <p className="card__apply">
+            <a className="card__link" href="#">
+              Learn More <i className="fas fa-arrow-right"></i>
+            </a>
+          </p>
+        </div>
+        <div className="card card-3">
+          <div className="card__icon">
+            <i className="fas fa-bolt"></i>
+          </div>
+          <h2 className="card__title">Payment, Accounting and Web Solutions</h2>
+          <p className="card__apply">
+            <a className="card__link" href="#">
+              Learn More <i className="fas fa-arrow-right"></i>
+            </a>
+          </p>
+        </div>
+        <div className="card card-4">
+          <div className="card__icon">
+            <i className="fas fa-bolt"></i>
+          </div>
+          <h2 className="card__title">Network Assessment</h2>
+          <p className="card__apply">
+            <a className="card__link" href="#">
+              Learn More <i className="fas fa-arrow-right"></i>
+            </a>
+          </p>
+        </div>
+        <div className="card card-5">
+          <div className="card__icon">
+            <i className="fas fa-bolt"></i>
+          </div>
+          <h2 className="card__title">Software Development Solutions</h2>
+          <p className="card__apply">
+            <a className="card__link" href="#">
+              Learn More <i className="fas fa-arrow-right"></i>
+            </a>
+          </p>
+        </div>
+        <div className="card card-1">
+          <div className="card__icon">
+            <i className="fas fa-bolt"></i>
+          </div>
+          <h2 className="card__title">It Financing Options</h2>
+          <p className="card__apply">
+            <a className="card__link" href="#">
+              Learn More <i className="fas fa-arrow-right"></i>
+            </a>
+          </p>
+        </div>
+        <div className="card card-2">
+          <div className="card__icon">
+            <i className="fas fa-bolt"></i>
+          </div>
+          <h2 className="card__title">Project Management Services</h2>
+          <p className="card__apply">
+            <a className="card__link" href="#">
+              Learn More <i className="fas fa-arrow-right"></i>
+            </a>
+          </p>
+        </div>
+        <div className="card card-3">
+          <div className="card__icon">
+            <i className="fas fa-bolt"></i>
+          </div>
+          <h2 className="card__title">Training Services</h2>
           <p className="card__apply">
             <a className="card__link" href="#">
               Learn More <i className="fas fa-arrow-right"></i>

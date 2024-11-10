@@ -14,6 +14,8 @@ import TermsAndConditions from "./components/pages/TermsAndConditions";
 import Disclaimer from "./components/pages/Disclaimer";
 import AccessibilityStatement from "./components/pages/AccessibilityStatement";
 import FAQ from "./components/pages/FAQ";
+import Page1 from "./components/pages/ItSolutionPages/page1";
+import Page2 from "./components/pages/ItSolutionPages/Page2";
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
             element={<AccessibilityStatement />}
           />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/cloudconsulting" element={<Page1 />} />
+          <Route path="/antivirus&cybersecurity" element={<Page2 />} />
         </Routes>
         <Footer />
       </Router>
