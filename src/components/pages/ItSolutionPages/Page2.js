@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Container = styled.div`
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin-top: 1250px;
+  margin-top: 1230px;
   width: 100%;
   padding: 0;
   background-color: #f4f4f4;
@@ -122,7 +122,7 @@ const Page2 = () => {
             <p>CrowdStrike</p>
           </Logo>
           <Logo>
-            <LogoImage src="" alt="CyberArk Logo" />
+            <LogoImage src="WWS\Partners\cyberark.png" alt="CyberArk Logo" />
             <p>CyberArk</p>
           </Logo>
           <Logo>
@@ -169,7 +169,7 @@ const Page2 = () => {
             <p>RSA</p>
           </Logo>
           <Logo>
-            <LogoImage src="" alt="Sailpoint Logo" />
+            <LogoImage src="WWS\Partners\sailpoint.png" alt="Sailpoint Logo" />
             <p>Sailpoint</p>
           </Logo>
           <Logo>
@@ -181,12 +181,12 @@ const Page2 = () => {
             <p>Trend Micro</p>
           </Logo>
           <Logo>
-            <LogoImage src="" alt="Trustwave Logo" />
+            <LogoImage src="WWS\Partners\trustwave.webp" alt="Trustwave Logo" />
             <p>Trustwave</p>
           </Logo>
           <Logo>
             <LogoImage
-              src="WWS\Partners\vmware"
+              src="WWS\Partners\vmware.png"
               alt="VMware Carbon Black Logo"
             />
             <p>VMware Carbon Black</p>

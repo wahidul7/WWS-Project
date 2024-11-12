@@ -16,6 +16,17 @@ import AccessibilityStatement from "./components/pages/AccessibilityStatement";
 import FAQ from "./components/pages/FAQ";
 import Page1 from "./components/pages/ItSolutionPages/page1";
 import Page2 from "./components/pages/ItSolutionPages/Page2";
+import Page3 from "./components/pages/ItSolutionPages/Page3";
+import Page4 from "./components/pages/ItSolutionPages/Page4";
+import Page5 from "./components/pages/ItSolutionPages/Page5";
+import Page6 from "./components/pages/ItSolutionPages/Page6";
+import Page7 from "./components/pages/ItSolutionPages/Page7";
+import Page8 from "./components/pages/ItSolutionPages/Page8";
+import Page9 from "./components/pages/ItSolutionPages/Page9";
+import Page10 from "./components/pages/ItSolutionPages/Page10";
+import Page11 from "./components/pages/ItSolutionPages/Page11";
+import Page12 from "./components/pages/ItSolutionPages/Page12";
+import Page13 from "./components/pages/ItSolutionPages/Page13";
 
 function App() {
   return (
@@ -39,6 +50,17 @@ function App() {
           <Route path="/faq" element={<FAQ />} />
           <Route path="/cloudconsulting" element={<Page1 />} />
           <Route path="/antivirus&cybersecurity" element={<Page2 />} />
+          <Route path="/datarecovery&migration" element={<Page3 />} />
+          <Route path="/communicationsystem" element={<Page4 />} />
+          <Route path="/ithardwaresolutions" element={<Page5 />} />
+          <Route path="/virtualcioctoservices" element={<Page6 />} />
+          <Route path="/ipmobile&virtualtelephone" element={<Page7 />} />
+          <Route path="/paymentaccounting&websolutions" element={<Page8 />} />
+          <Route path="/networkassessment" element={<Page9 />} />
+          <Route path="/softwaredevelopmentsolutions" element={<Page10 />} />
+          <Route path="/itfinancing" element={<Page11 />} />
+          <Route path="/projectmanagementservices" element={<Page12 />} />
+          <Route path="/trainingservices" element={<Page13 />} />
         </Routes>
         <Footer />
       </Router>

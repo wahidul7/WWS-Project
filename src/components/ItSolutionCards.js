@@ -24,7 +24,7 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Cloud Consulting and Implementation</h2>
           <p className="card__apply">
-            <Link to="/page1" className="card__link">
+            <Link to="/cloudconsulting" className="card__link">
               {" "}
               Learn More <i className="fas fa-arrow-right"></i>{" "}
             </Link>
@@ -36,7 +36,7 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Cyber Security Products & Services</h2>
           <p className="card__apply">
-            <Link to="/page2" className="card__link">
+            <Link to="/antivirus&cybersecurity" className="card__link">
               {" "}
               Learn More <i className="fas fa-arrow-right"></i>{" "}
             </Link>
@@ -48,9 +48,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Data Recovery and Data Migration</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/datarecovery&migration" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
         <div className="card card-4">
@@ -59,9 +60,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Communication Systems</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/communicationsystem" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
         <div className="card card-5">
@@ -70,9 +72,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">IT Hardware Solutions</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/ithardwaresolutions" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
         <div className="card card-1">
@@ -81,9 +84,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Virtual CIO/CTO Service</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/virtualcioctoservices" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
         <div className="card card-2">
@@ -92,9 +96,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">IP Mobile & Virtual Telephony</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/ipmobile&virtualtelephone" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>{" "}
           </p>
         </div>
         <div className="card card-3">
@@ -103,9 +108,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Payment, Accounting and Web Solutions</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/paymentaccounting&websolutions" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>{" "}
           </p>
         </div>
         <div className="card card-4">
@@ -114,9 +120,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Network Assessment</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/networkassessment" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
         <div className="card card-5">
@@ -125,9 +132,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Software Development Solutions</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/softwaredevelopmentsolutions" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
         <div className="card card-1">
@@ -136,9 +144,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">It Financing Options</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/itfinancing" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
         <div className="card card-2">
@@ -147,9 +156,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Project Management Services</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/projectmanagementservices" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
         <div className="card card-3">
@@ -158,9 +168,10 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Training Services</h2>
           <p className="card__apply">
-            <a className="card__link" href="#">
-              Learn More <i className="fas fa-arrow-right"></i>
-            </a>
+            <Link to="/trainingservices" className="card__link">
+              {" "}
+              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            </Link>
           </p>
         </div>
       </div>
