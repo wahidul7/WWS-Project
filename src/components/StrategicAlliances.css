@@ -1,55 +1,86 @@
-@keyframes scroll {
-  0% {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+@keyframes slide {
+  from {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(calc(-100%));
+  to {
+    transform: translateX(-100%);
   }
 }
 
-.slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
-  margin: auto;
+.logos {
   overflow: hidden;
+  padding: 20px 0;
+  background: white;
+  white-space: nowrap;
   position: relative;
-  width: 100%; /* Ensure full width */
+  max-width: 100vw;
+  margin: auto;
 }
 
-.slider::before,
-.slider::after {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  content: "";
-  height: 100px;
+.logos h1 {
+  text-align: center;
+  color: aquamarine;
+  margin-bottom: 20px;
+}
+.logos:before,
+.logos:after {
   position: absolute;
-  width: 200px;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  content: "";
   z-index: 2;
 }
 
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-.slider::before {
+.logos:before {
   left: 0;
-  top: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
 
-.slide-track {
-  display: flex;
-  width: calc(250px * 14); /* Adjust this as necessary */
-  animation: scroll 15s linear infinite;
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
-.slide {
-  height: 100px;
-  width: 250px;
-  flex-shrink: 0; /* Prevent slides from shrinking */
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 150s slide infinite linear;
+  white-space: nowrap;
+}
+
+.logos-slide img {
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  margin: 0 60px;
+  object-fit: contain; /* Ensure the images fit within the set dimensions */
+}
+
+@media (max-width: 768px) {
+  .logos-slide img {
+    width: 80px;
+    height: 80px;
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logos-slide img {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+  }
 }

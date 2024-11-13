@@ -5,6 +5,7 @@ import AboutWWS from "../AboutWWS";
 import AchievementsCard from "../AchievementsCard";
 import OurProcess from "../OurProcess";
 import ClientFeedback from "../ClientFeedback";
+import StrategicAlliances from "../StrategicAlliances";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <AchievementsCard />
       <ClientFeedback />
       <OurProcess />
+      <StrategicAlliances />
     </>
   );
 }

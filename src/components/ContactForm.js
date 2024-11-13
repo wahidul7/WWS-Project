@@ -89,12 +89,12 @@ const ContactForm = () => {
         <p>20 Bay Street, 11th Floor, Toronto, Ontario, M5J 2N8</p>
         <div className="icon">
           <img src="WWS/phone.png" alt="Phone Icon" />
-          <p>+1 (416) 654-2124</p>
+          <p>+1 (416) 654-2124 </p>
           <p>+1 (877) 746-4997</p>
         </div>
         <div className="icon">
           <img src="WWS/email.png" alt="Email Icon" />
-          <p>info@worldwirelesssolutions.com</p>
+          <p>info@worldwireless solutions.com</p>
         </div>
         <div className="social-icons">
           <a
