@@ -60,9 +60,10 @@ form button {
 
 .contact-info .icon,
 .contact-info .social-icons {
-  display: flex;
-  align-items: center;
   margin-bottom: 10px;
+}
+.social-icons {
+  justify-content: space-between;
 }
 
 .contact-info .icon img {
