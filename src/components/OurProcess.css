@@ -24,7 +24,7 @@ body {
 .card {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 470px;
   margin: 0 auto;
   background: #000;
   border-radius: 15px;
@@ -60,14 +60,14 @@ body {
 }
 
 .face1 .python {
-  background-color: #00fffc;
+  background-color: #fffc00;
   -webkit-background-clip: text;
   background-clip: text; /* Standard property for compatibility */
   -webkit-text-fill-color: transparent;
 }
 
 .face1 .cSharp {
-  background-color: #fc00ff;
+  background-color: #fffc00;
   -webkit-background-clip: text;
   background-clip: text; /* Standard property for compatibility */
   -webkit-text-fill-color: transparent;
@@ -96,31 +96,28 @@ body {
 }
 
 .card:nth-child(1) .face2 {
-  background-image: linear-gradient(
-    40deg,
-    #2af779 0%,
-    #12cbe8 45%,
-    #380be8 100%
+  background-image: radial-gradient(
+    circle,
+    rgba(95, 184, 106, 1) 0%,
+    rgba(19, 19, 19, 1) 100%
   );
   border-radius: 15px;
 }
 
 .card:nth-child(2) .face2 {
-  background-image: linear-gradient(
-    40deg,
-    #fc00ff 0%,
-    #00fffc 45%,
-    #fffc00 100%
+  background-image: radial-gradient(
+    circle,
+    rgba(95, 184, 106, 1) 0%,
+    rgba(19, 19, 19, 1) 100%
   );
   border-radius: 15px;
 }
 
 .card:nth-child(3) .face2 {
-  background-image: linear-gradient(
-    40deg,
-    #00fffc 0%,
-    #1eff00 45%,
-    #1e24e5 100%
+  background-image: radial-gradient(
+    circle,
+    rgba(95, 184, 106, 1) 0%,
+    rgba(19, 19, 19, 1) 100%
   );
   border-radius: 15px;
 }

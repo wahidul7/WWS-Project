@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../App.css";
 import "../News.css";
+import StrategicAlliances from "../StrategicAlliances";
 
 export function NewsandBlog() {
   const [news, setNews] = useState([]);
@@ -38,6 +39,7 @@ export function NewsandBlog() {
           </a>
         ))}
       </div>
+      <StrategicAlliances />
     </>
   );
 }

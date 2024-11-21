@@ -7,21 +7,29 @@
   flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
-.about-wws-card, .testimonial-card {
-  background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+.about-wws-card,
+.testimonial-card {
+  background: radial-gradient(
+    circle,
+    rgba(95, 184, 106, 1) 0%,
+    rgba(19, 19, 19, 1) 100%
+  );
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 48%;
-  margin-bottom: 20px; /* Add margin for spacing when wrapping */
+  margin-bottom: 20px;
+  color: #fff; /* Optional: Set text color to white for better contrast */
+}
+.about-wws-card h2,
+.testimonial-card h3 {
+  color: white;
 }
 
-.about-wws-card h2, .testimonial-card h3 {
-  color: #333;
-}
-
-.about-wws-card p, .about-wws-card ul, .testimonial-card blockquote {
-  color: #555;
+.about-wws-card p,
+.about-wws-card ul,
+.testimonial-card blockquote {
+  color: white;
 }
 
 .about-wws-card ul {
@@ -30,7 +38,7 @@
 }
 
 .testimonial-card blockquote {
-  border-left: 4px solid #007BFF;
+  border-left: 4px solid #007bff;
   padding-left: 16px;
   margin: 20px 0;
   font-style: italic;
@@ -42,7 +50,7 @@
 }
 
 .testimonial-card a {
-  color: #007BFF;
+  color: #007bff;
   text-decoration: none;
 }
 
@@ -52,7 +60,8 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .about-wws-card, .testimonial-card {
+  .about-wws-card,
+  .testimonial-card {
     width: 100%; /* Full width on smaller screens */
   }
 

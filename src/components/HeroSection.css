@@ -1,7 +1,6 @@
 .hero-container {
-  margin-top: 2350px;
-  background: url("/public/images/Programming 1.png") center center/cover
-    no-repeat;
+  background: url("/public/images/online-coding-classes.jpg") center
+    center/cover no-repeat;
   height: 80vh;
   width: 100%;
   display: flex;
@@ -14,16 +13,17 @@
 }
 
 .hero-container > h1 {
-  color: #fff;
+  color: white;
   font-size: 60px;
   margin-top: 50px;
 }
 
 .hero-container > p {
   margin-top: 8px;
-  background-color: black;
-  color: #fff;
+
+  color: white;
   font-size: 20px;
+  font-weight: bold;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }

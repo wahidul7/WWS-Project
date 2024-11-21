@@ -80,3 +80,7 @@
     max-width: calc(100% - 20px); /* 1 card per row */
   }
 }
+/* Target the second card to align it to the right */
+.row .card:nth-child(2) {
+  margin-left: auto; /* Push the second card to the right */
+}

@@ -6,6 +6,7 @@ import {
   FaTwitter,
   FaLinkedin,
 } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -31,10 +32,32 @@ const ContactForm = () => {
         },
         body: JSON.stringify(formData),
       });
-      const result = await response.text();
-      alert(result);
+      const result = await response.json();
+
+      if (result.message === "Success") {
+        console.log("Email sent successfully");
+        Swal.fire({
+          title: "Successful!",
+          text: "Message Sent Successfully!",
+          icon: "success",
+        }).then(() => {
+          window.location.reload();
+        });
+      } else {
+        console.log("Failed to send email");
+        Swal.fire({
+          title: "Failed!",
+          text: "Message Failed!",
+          icon: "error",
+        });
+      }
     } catch (error) {
       console.error("Error:", error);
+      Swal.fire({
+        title: "Error!",
+        text: "Error sending message!",
+        icon: "error",
+      });
     }
   };
 

@@ -4,7 +4,6 @@ import styled from "styled-components";
 const Container = styled.div`
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin-top: 1940px;
   width: 100%;
   padding: 0;
   background-color: #f4f4f4;

@@ -1,7 +1,6 @@
 import express from "express";
 import mysql from "mysql";
 import cors from "cors";
-import nodemailer from "nodemailer";
 
 const app = express();
 
@@ -27,16 +26,7 @@ app.get("/news", (req, res) => {
   });
 });
 
-// Nodemailer setup
-const transporter = nodemailer.createTransport({
-  service: "Gmail",
-  auth: {
-    user: "pkwahid71@gmail.com",
-    pass: "71@wahid",
-  },
-});
-
-app.post("/contact", (req, res) => {
+app.post("/contact", async (req, res) => {
   const { name, email, phone, message } = req.body;
 
   // Store in MySQL
@@ -47,23 +37,39 @@ app.post("/contact", (req, res) => {
       return res.status(500).send(err);
     }
     console.log("Data saved in MySQL");
-
-    // Send email
-    const mailOptions = {
-      from: "pkwahid71@gmail.com",
-      to: "bhusalsameer006@gmail.com",
-      subject: "New Contact Form Submission",
-      text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nMessage: ${message}`,
-    };
-
-    transporter.sendMail(mailOptions, (error, info) => {
-      if (error) {
-        return res.status(500).send(error.toString());
-      }
-      console.log("Email sent: " + info.response);
-      res.send("Form submitted successfully");
-    });
   });
+
+  // Send data via Web3Forms
+  try {
+    const formData = {
+      name,
+      email,
+      phone,
+      message,
+      access_key: "5c2b4393-132c-4f8c-ae20-13e0ebbdbdd8",
+    };
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const resData = await response.json();
+
+    if (resData.success) {
+      console.log("Email sent successfully");
+      return res.status(200).send({ message: "Success" });
+    } else {
+      console.log("Failed to send email");
+      return res.status(500).send({ message: "Failed to send email" });
+    }
+  } catch (error) {
+    console.log("Error sending email:", error);
+    return res.status(500).send({ message: "Error sending email" });
+  }
 });
 
 app.listen(8800, () => {

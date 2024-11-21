@@ -53,12 +53,20 @@ h3 {
   display: flex;
   flex-flow: column;
   width: 100%;
-  box-shadow: 0 6px 20px rgba(10, 243, 91, 0.17);
-  -webkit-filter: drop-shadow(0 6px 20px rgba(4, 214, 197, 0.84));
-  filter: drop-shadow(0 6px 20px rgba(10, 193, 217, 0.495));
+  /* Change box-shadow to a radial gradient color */
+  box-shadow: 0 6px 20px rgba(95, 184, 106, 0.5); /* Semi-transparent green */
+  filter: drop-shadow(
+    0 6px 20px rgba(95, 184, 106, 0.5)
+  ); /* Safari-compatible shadow */
   border-radius: 10px;
   overflow: hidden;
   text-decoration: none;
+  transition: box-shadow 0.3s ease; /* Smooth shadow effect */
+}
+
+/* Optional: Increase shadow intensity on hover */
+.cards__item__link:hover {
+  box-shadow: 0 10px 30px rgba(95, 184, 106, 0.7); /* Darker green shadow */
 }
 
 .cards__item__pic-wrap {
@@ -132,4 +140,14 @@ h3 {
   .cards__item {
     margin-bottom: 2rem;
   }
+}
+.cards__item__info {
+  padding: 20px 30px 30px;
+}
+
+.cards__item__info h2 {
+  background-color: rgba(95, 184, 106, 1); /* Green color for headings */
+  font-size: 20px; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Space below heading */
+  font-weight: bold; /* Optional: make the heading bold */
 }

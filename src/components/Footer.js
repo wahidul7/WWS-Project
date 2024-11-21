@@ -67,18 +67,42 @@ function Footer() {
 
           <div className="footer-link-items">
             <h2>Social Media</h2>
-            <Link to="/">
-              <FaInstagram /> Instagram
-            </Link>
-            <Link to="/">
+            <a
+              className="social-icon-link"
+              href="https://www.facebook.com/WWSCorp"
+              target="_blank"
+              aria-label="Facebook"
+              rel="noopener noreferrer"
+            >
               <FaFacebookF /> Facebook
-            </Link>
-            <Link to="/">
-              <FaYoutube /> YouTube
-            </Link>
-            <Link to="/">
+            </a>
+            <a
+              className="social-icon-link"
+              href="https://www.instagram.com/wwscorp/"
+              target="_blank"
+              aria-label="Instagram"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram /> Instagram
+            </a>
+            <a
+              className="social-icon-link"
+              href="https://x.com/WWSCorp"
+              target="_blank"
+              aria-label="Twitter"
+              rel="noopener noreferrer"
+            >
               <FaTwitter /> Twitter
-            </Link>
+            </a>
+            <a
+              className="social-icon-link"
+              href="https://www.linkedin.com/company/wwscorp/"
+              target="_blank"
+              aria-label="LinkedIn"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin /> LinkedIn
+            </a>
           </div>
         </div>
       </div>
@@ -93,46 +117,42 @@ function Footer() {
             Copyright © 2023. All rights reserved.
           </small>
           <div className="social-icons">
-            <Link
+            <a
               className="social-icon-link facebook"
-              to="/"
+              href="https://www.facebook.com/WWSCorp"
               target="_blank"
               aria-label="Facebook"
+              rel="noopener noreferrer"
             >
               <FaFacebookF />
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link instagram"
-              to="/"
+              href="https://www.instagram.com/wwscorp/"
               target="_blank"
               aria-label="Instagram"
+              rel="noopener noreferrer"
             >
               <FaInstagram />
-            </Link>
-            <Link
-              className="social-icon-link youtube"
-              to="/"
-              target="_blank"
-              aria-label="YouTube"
-            >
-              <FaYoutube />
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link twitter"
-              to="/"
+              href="https://x.com/WWSCorp"
               target="_blank"
               aria-label="Twitter"
+              rel="noopener noreferrer"
             >
               <FaTwitter />
-            </Link>
-            <Link
+            </a>
+            <a
               className="social-icon-link linkedin"
-              to="/"
+              href="https://www.linkedin.com/company/wwscorp/"
               target="_blank"
               aria-label="LinkedIn"
+              rel="noopener noreferrer"
             >
               <FaLinkedin />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

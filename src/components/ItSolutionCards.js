@@ -3,6 +3,13 @@ import { Link } from "react-router-dom";
 import "./ItSolutionCards.css";
 
 function ItSolutionCards() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="main-container">
       <div className="heading">
@@ -24,9 +31,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Cloud Consulting and Implementation</h2>
           <p className="card__apply">
-            <Link to="/cloudconsulting" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/cloudconsulting"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>
@@ -36,9 +46,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Cyber Security Products & Services</h2>
           <p className="card__apply">
-            <Link to="/antivirus&cybersecurity" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/antivirus&cybersecurity"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>
@@ -48,9 +61,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Data Recovery and Data Migration</h2>
           <p className="card__apply">
-            <Link to="/datarecovery&migration" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/datarecovery&migration"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i class="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>
@@ -60,9 +76,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Communication Systems</h2>
           <p className="card__apply">
-            <Link to="/communicationsystem" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/communicationsystem"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>
@@ -72,9 +91,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">IT Hardware Solutions</h2>
           <p className="card__apply">
-            <Link to="/ithardwaresolutions" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/ithardwaresolutions"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>
@@ -84,9 +106,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Virtual CIO/CTO Service</h2>
           <p className="card__apply">
-            <Link to="/virtualcioctoservices" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/virtualcioctoservices"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>
@@ -96,10 +121,13 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">IP Mobile & Virtual Telephony</h2>
           <p className="card__apply">
-            <Link to="/ipmobile&virtualtelephone" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
-            </Link>{" "}
+            <Link
+              to="/ipmobile&virtualtelephone"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
+            </Link>
           </p>
         </div>
         <div className="card card-3">
@@ -108,10 +136,13 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Payment, Accounting and Web Solutions</h2>
           <p className="card__apply">
-            <Link to="/paymentaccounting&websolutions" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
-            </Link>{" "}
+            <Link
+              to="/paymentaccounting&websolutions"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
+            </Link>
           </p>
         </div>
         <div className="card card-4">
@@ -120,9 +151,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Network Assessment</h2>
           <p className="card__apply">
-            <Link to="/networkassessment" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/networkassessment"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>
@@ -132,9 +166,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Software Development Solutions</h2>
           <p className="card__apply">
-            <Link to="/softwaredevelopmentsolutions" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/softwaredevelopmentsolutions"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>
@@ -144,9 +181,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">It Financing Options</h2>
           <p className="card__apply">
-            <Link to="/itfinancing" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/itfinancing"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>
@@ -156,9 +196,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Project Management Services</h2>
           <p className="card__apply">
-            <Link to="/projectmanagementservices" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/projectmanagementservices"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>
@@ -168,9 +211,12 @@ function ItSolutionCards() {
           </div>
           <h2 className="card__title">Training Services</h2>
           <p className="card__apply">
-            <Link to="/trainingservices" className="card__link">
-              {" "}
-              Learn More <i className="fas fa-arrow-right"></i>{" "}
+            <Link
+              to="/trainingservices"
+              className="card__link"
+              onClick={scrollToTop}
+            >
+              Learn More <i className="fas fa-arrow-right"></i>
             </Link>
           </p>
         </div>

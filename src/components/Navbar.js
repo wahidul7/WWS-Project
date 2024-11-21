@@ -24,11 +24,23 @@ function Navbar() {
 
   window.addEventListener("resize", showButton);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleNavLinkClick = () => {
+    scrollToTop();
+    closeMobileMenu();
+  };
+
   return (
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link to="/" className="navbar-logo" onClick={handleNavLinkClick}>
             <img
               src="/WWS/logoWWS.png"
               className="navbar-img"
@@ -41,7 +53,7 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link to="/" className="nav-links" onClick={handleNavLinkClick}>
                 HOME
               </Link>
             </li>
@@ -49,7 +61,7 @@ function Navbar() {
               <Link
                 to="/itsolutions"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={handleNavLinkClick}
               >
                 IT SOLUTIONS
               </Link>
@@ -58,37 +70,34 @@ function Navbar() {
               <Link
                 to="/casestudies"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={handleNavLinkClick}
               >
                 CASE STUDIES
               </Link>
             </li>
-
             <li className="nav-item">
               <Link
                 to="/ourcompany"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={handleNavLinkClick}
               >
                 OUR COMPANY
               </Link>
             </li>
-
             <li className="nav-item">
               <Link
                 to="/newsandblog"
                 className="nav-links"
-                onClick={closeMobileMenu}
+                onClick={handleNavLinkClick}
               >
                 NEWS & BLOG
               </Link>
             </li>
-
             <li>
               <Link
                 to="/contact"
                 className="nav-links-mobile"
-                onClick={closeMobileMenu}
+                onClick={handleNavLinkClick}
               >
                 CONTACT
               </Link>

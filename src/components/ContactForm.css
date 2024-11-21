@@ -5,38 +5,56 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  width: 100%;
-  background-color: #f4f4f4;
+  min-height: 100vh; /* Using min-height for better flexibility */
+  width: 100vw;
+  background: white;
 }
 
 .contact-form-container {
   display: flex;
-  justify-content: space-between;
-  background-color: #fff;
+  flex-direction: column; /* Initial column layout for small screens */
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle,
+    rgba(95, 184, 106, 1) 0%,
+    rgba(19, 19, 19, 1) 100%
+  );
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 1200px; /* Adjust this as needed */
-  width: 100%; /* Make sure it takes the full width */
-  height: 100%; /* Make sure it takes the full height */
-  box-sizing: border-box;
+  max-width: 1500px;
+  width: 100%; /* Slightly responsive width */
+  height: auto; /* Allowing height to be flexible */
 }
 
 .contact-form-container form,
 .contact-info {
-  width: 48%;
+  width: 90%; /* Initial full width for small screens */
+}
+
+/* Larger screen adjustments */
+@media (min-width: 768px) {
+  .contact-form-container {
+    flex-direction: row; /* Row layout for larger screens */
+    justify-content: space-between;
+  }
+
+  .contact-form-container form,
+  .contact-info {
+    width: 48%; /* Adjust width for larger screens */
+  }
 }
 
 form h2,
 .contact-info h2 {
   margin-bottom: 20px;
+  color: white;
 }
 
 form label,
 .contact-info p,
 .icon p {
   margin-bottom: 5px;
+  color: white;
 }
 
 form input,
