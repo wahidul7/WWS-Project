@@ -9,7 +9,6 @@ body {
   width: 100vw;
   background: white;
 }
-
 .contact-form-container {
   display: flex;
   flex-direction: column; /* Initial column layout for small screens */
@@ -20,7 +19,7 @@ body {
     rgba(95, 184, 106, 1) 0%,
     rgba(19, 19, 19, 1) 100%
   );
-  padding: 20px;
+  padding: 30px;
   max-width: 1500px;
   width: 100%; /* Slightly responsive width */
   height: auto; /* Allowing height to be flexible */

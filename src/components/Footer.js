@@ -116,44 +116,9 @@ function Footer() {
           <small className="website-rights">
             Copyright © 2023. All rights reserved.
           </small>
-          <div className="social-icons">
-            <a
-              className="social-icon-link facebook"
-              href="https://www.facebook.com/WWSCorp"
-              target="_blank"
-              aria-label="Facebook"
-              rel="noopener noreferrer"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              className="social-icon-link instagram"
-              href="https://www.instagram.com/wwscorp/"
-              target="_blank"
-              aria-label="Instagram"
-              rel="noopener noreferrer"
-            >
-              <FaInstagram />
-            </a>
-            <a
-              className="social-icon-link twitter"
-              href="https://x.com/WWSCorp"
-              target="_blank"
-              aria-label="Twitter"
-              rel="noopener noreferrer"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              className="social-icon-link linkedin"
-              href="https://www.linkedin.com/company/wwscorp/"
-              target="_blank"
-              aria-label="LinkedIn"
-              rel="noopener noreferrer"
-            >
-              <FaLinkedin />
-            </a>
-          </div>
+          <small className="website-rights">
+            Developed By: <strong>INNOVATE5-NCT</strong>
+          </small>
         </div>
       </section>
     </div>

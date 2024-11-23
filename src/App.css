@@ -44,7 +44,6 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-  height: 400px;
 }
 
 .contact {
@@ -63,7 +62,4 @@
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
-body {
-  background-color: black;
 }
