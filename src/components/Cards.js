@@ -6,7 +6,7 @@ function Cards() {
   return (
     <div className="cards">
       <h1>Our Projects </h1>
-      <h3>
+      <h3 className="project-h3">
         WWS is an experienced company, across the years we have been honored to
         serve great companies which have permitted us to display their success
         made possible by the services we provided. Check out this awesome case
@@ -34,7 +34,7 @@ function Cards() {
               path="/services"
             />
           </ul>
-          <h2>Abudabi</h2>
+          <h2 className="project-h2">Abudabi</h2>
           <ul className="cards__items">
             <CardItem
               src="WWS\2-1-q7mwb9mak7vf0wfyeixt6hrlwjs4fk161qoqeprqj4.png"
@@ -52,7 +52,7 @@ function Cards() {
               path="/services"
             />
           </ul>
-          <h2>Brasil</h2>
+          <h2 className="project-h2">Brasil</h2>
           <ul className="cards__items">
             <CardItem
               src="WWS\13-1-q7mwb9mak7vf0wfyeixt6hrlwjs4fk161qoqeprqj4.png"
@@ -70,7 +70,7 @@ function Cards() {
               path="/services"
             />
           </ul>
-          <h2>Qatar</h2>
+          <h2 className="project-h2">Qatar</h2>
           <ul className="cards__items">
             <CardItem
               src="WWS\6-1-q7mwb9mak7vf0wfyeixt6hrlwjs4fk161qoqeprqj4.png"
@@ -88,7 +88,7 @@ function Cards() {
               path="/services"
             />
           </ul>
-          <h2>Kuwait</h2>
+          <h2 className="project-h2">Kuwait</h2>
           <ul className="cards__items">
             <CardItem
               src="WWS\Diseno-sin-titulo-5-q7tuyw8s3cjfkt4ar1epxeucx3gqqn7mojzur2ch74.jpg"
@@ -106,7 +106,7 @@ function Cards() {
               path="/services"
             />
           </ul>
-          <h2>Kuwait</h2>
+          <h2 className="project-h2">Venezuela</h2>
           <ul className="cards__items">
             <CardItem
               src="WWS\12-1-q7mwb9mak7vf0wfyeixt6hrlwjs4fk161qoqeprqj4.png"

@@ -6,12 +6,14 @@ import AchievementsCard from "../AchievementsCard";
 import OurProcess from "../OurProcess";
 import ClientFeedback from "../ClientFeedback";
 import StrategicAlliances from "../StrategicAlliances";
+import WhyChooseUs from "../WhyChooseUs";
 
 function Home() {
   return (
     <>
       <HeroSection />
       <AboutWWS />
+      <WhyChooseUs />
       <AchievementsCard />
       <ClientFeedback />
       <OurProcess />

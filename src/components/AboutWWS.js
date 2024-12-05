@@ -16,7 +16,7 @@ function AboutWWS() {
           comprehensive range of business services.
         </p>
 
-        <h3>Our Services</h3>
+        <h3 className="aboutwwsh3">Our Services</h3>
         <ul>
           <li>
             <strong>Personalized Services</strong>: Tailored solutions to meet
@@ -63,7 +63,9 @@ function AboutWWS() {
           </footer>
         </blockquote>
         <p>
-          <a href="#more-about-us">Learn More About Us</a>
+          <a className="aboutusbutton" href="/OurCompany">
+            More About Us
+          </a>
         </p>
       </div>
     </div>

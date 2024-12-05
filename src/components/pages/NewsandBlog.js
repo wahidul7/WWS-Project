@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../../App.css";
 import "../News.css";
-import StrategicAlliances from "../StrategicAlliances";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export function NewsandBlog() {
@@ -57,7 +56,6 @@ export function NewsandBlog() {
           </a>
         ))}
       </div>
-      <StrategicAlliances />
     </>
   );
 }

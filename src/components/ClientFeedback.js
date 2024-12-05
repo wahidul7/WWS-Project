@@ -5,6 +5,16 @@ const ClientFeedback = () => {
   return (
     <>
       <div className="row">
+        {/* Heading */}
+        <div className="heading-box">
+          <div className="heading">
+            <h3 className="feedbackcard-h3">Clients Feedback</h3>
+            <h2 className="green">Our Clients Reviews</h2>
+            <h3 className="feedbackcard-h3">
+              Trusted globally by companies of all sizes
+            </h3>
+          </div>
+        </div>
         <div className="card">
           <h4>A. Jose Bateman AI Consultant - Rapport</h4>
           <p>

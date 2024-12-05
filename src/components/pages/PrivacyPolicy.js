@@ -1,7 +1,7 @@
 import React from "react";
 export default function PrivacyPolicy() {
   return (
-    <div style={{ marginTop: "13300px", marginBottom: "50px", width: "100vw" }}>
+    <div style={{ marginBottom: "50px", width: "100vw" }}>
       <div
         style={{
           padding: "4vh 10vw",

@@ -14,8 +14,8 @@ h3 {
 .cards h1::after {
   content: "";
   display: block;
-  width: 80%; /* Adjust the width as needed */
-  height: 4px; /* Adjust the height as needed */
+  width: 15%; /* Adjust the width as needed */
+  height: 8px; /* Adjust the height as needed */
   background: rgb(14, 216, 20); /* Adjust the color as needed */
   margin: auto; /* Adjust the margin as needed */
   position: absolute;
@@ -23,7 +23,13 @@ h3 {
   right: 0;
   bottom: -2px; /* Adjust the position as needed */
 }
-
+.project-h2 {
+  color: black;
+}
+.project-h3 {
+  text-align: center;
+  margin: 30px;
+}
 .cards__container {
   display: flex;
   flex-flow: column;

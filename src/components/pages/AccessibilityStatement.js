@@ -2,7 +2,7 @@ import React from "react";
 
 export default function AccessibilityStatement() {
   return (
-    <div style={{ marginTop: "600px", marginBottom: "50px", width: "100vw" }}>
+    <div style={{ marginBottom: "50px", width: "100vw" }}>
       <div
         style={{
           padding: "4vh 10vw",

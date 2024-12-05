@@ -12,20 +12,43 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
 
+.feedbackcard-h3 {
+  text-align: center;
+  color: black;
+}
+.green {
+  color: #086603;
+  text-align: center;
+}
+.heading-box {
+  border: 5px solid black;
+  padding: 5px;
+  margin: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
 .card {
   border-radius: 10px;
   filter: drop-shadow(0 5px 10px 0 #ffffff);
   width: 100%;
   max-width: 400px;
-  height: 350px;
+  height: 400px;
   background-color: #ffffff;
   padding: 20px;
   position: relative;
   z-index: 0;
   overflow: hidden;
   transition: 0.6s ease-in;
+  margin-left: 50px;
+  margin-right: 50px;
   margin: 10px; /* Add margin for spacing */
 }
 
@@ -80,7 +103,8 @@
     max-width: calc(100% - 20px); /* 1 card per row */
   }
 }
+
 /* Target the second card to align it to the right */
-.row .card:nth-child(2) {
+.row .card:nth-child(2n + 1) {
   margin-left: auto; /* Push the second card to the right */
 }

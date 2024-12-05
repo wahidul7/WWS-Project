@@ -3,7 +3,7 @@ import "./OurTeams.css";
 import { FaLinkedin } from "react-icons/fa";
 
 const teams = {
-  Employee: [
+  "Executive Team": [
     {
       name: "Eduardo Harari",
       title: "President and CEO",
@@ -214,6 +214,12 @@ const teams = {
 const OurTeams = () => {
   return (
     <div className="teams-container">
+      <h1 className="team-heading">Meet Our Team </h1>
+      <p className="team-paragraph">
+        WWS has a network of consultants, industry experts, technical gurus and
+        support staff that spans the globe, and offers clients a truly global
+        perspective on a broad range of industries, markets, and technologies.
+      </p>
       {Object.keys(teams).map((team) => (
         <div key={team} className="team-section">
           <h2 className="team-title">{team}</h2>
@@ -226,7 +232,7 @@ const OurTeams = () => {
                   className="photo"
                 />
                 <div className="info">
-                  <h3>{employee.name}</h3>
+                  <h3 className="ourteam-h3">{employee.name}</h3>
                   <p>{employee.title}</p>
                   <a
                     href={employee.linkedin}

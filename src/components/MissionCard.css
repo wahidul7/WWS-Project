@@ -1,0 +1,57 @@
+.mission-card {
+  position: relative;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/public/images/black-wallpaper-5.jpg") center/cover no-repeat;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+.mission-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.column {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+/* Flexbox for Responsive Design */
+@media (min-width: 768px) {
+  .mission-card-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .column {
+    width: 45%;
+  }
+}
